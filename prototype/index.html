@@ -9,9 +9,10 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <h1> BUCKEYE</h1>
-      </div>
+        <img class="logo" src="images/logo.png" alt="logo" />
+        <!-- js -->
+        <a href="#menu" class="menu-link">Menu</a>
+        <nav id="menu" role="navigation">
     <ul>
       <li>
         <a href="index.html">Home</a>
@@ -32,33 +33,56 @@
         <a href="#">About us</a>
       </li>
     </ul>
+  </nav>
+  <!-- js -->
   </header>
   <main>
+    <!-- croll js -->
+    <!-- Add the code for your slider -->
+<!-- Create a DIV with the class "carousel-cell" for each item you'd like in your slider.  Note, for images, it's best to resize them all to the same height and width -->
+<div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
+         >
+  <div class="carousel-cell">
+            <img src="images/header.jpg">
+    </div>
+  <div class="carousel-cell">
+            <img src="images/header2.jpg">
+    </div>
+    <div class="carousel-cell">
+            <img src="images/header3.jpg">
+    </div>
+</div>
+
+<!-- Flickity hosts the appropriate CSS and JavaScript for you, so you don't need to download them if you don't want to.  Add the Flickity JavaScript and CSS File to the end of your HTML (before the closing body tag) -->
+
+<script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
+<!-- scroll js -->
     <div class="imagetop">
-      <h2>image</h2>
     </div>
     <p>Your sweet home</p>
   </main>
   <section>
     <div class="intro">
-    <h2>Introduction</h2>
     <div class="imageintro">
-      <h2>image</h2>
-      </div>
+      <img src="images/introduction.jpg">
+    </div>
+     <h2>Introduction</h2>
       <p>Your Innkeepers, Louise and Darrell Johnson, have prepared every detail to ensure that your vacation is a special event that you will long remember. Your experience starts with a spacious room, a large comfortable bed, and a spectacular gourmet breakfast. Buckeye Bed & Breakfast is nestled in the foothills of the Cambridge park with 11 forested acres, beautiful landscaping and stunning views.
 </p>
 <div class="more">
-  <a href="#">more</a>
+  <a href="#">More</a>
 </div>
 </div>
 <div class="honor">
   <h2>Honor</h2>
   <div class="imageho">
-  <h2>image</h2>
+  <img src="images/honor.jpg">
 </div>
 <p>Listed on the National Register & Save America's Treasures and built in 1878; Buckeye Bed & Breakfast has been featured in Mid-West Living Magazine with Trevor's tour of the National Rd., RT. 40, Southeastern Ohio Magazine, Discover Ohio, Arrington's Bed & Breakfast Journal, Inn Traveler, 4 years of awards, Mid-West Living (Spring 2006).</p>
 <div class="more">
-  <h5>more</h5>
+  <a href="#">More</a>
+</div>
 </div>
 </div>
 <div class="attract">
@@ -78,18 +102,20 @@ Ravens Glenn Winery</a></li>
     <dl>
     <dt>601 Turner Ave, Cambridge, OH 43725
 </dt>
-    <dt>
+    <!-- <dt>
       Phone:
-    </dt>
-    <dd>330-672-3031</dd>
-    <dt>Email:</dt>
-    <dd>stay@buckeyebedbreakfast.com</dd>
+    </dt> -->
+    <dd>Phone: 330-672-3031</dd>
+    <!-- <dt>Email:</dt> -->
+    <dd>Email: stay@buckeyebedbreakfast.com</dd>
     </dl>
     <div class="logob">
-      <h4>logo</h4>
+      <img src="images/logo.png">
     </div>
   </footer>
        <!-- The page content goes here -->
       <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="my.js"></script>
   </body>
 </html>

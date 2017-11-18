@@ -1,11 +1,228 @@
 body {
-  max-width: 1000px;
+  max-width: 12800px;
   padding: 1em;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family:  Avenir,sans-serif;
+  background-color: #240202;
 }
-
 div, section, main, aside, header, footer {
   border: 1px solid lightgray;
   padding: .5em;
   margin-bottom: 1em;
 }
+header ul{
+  list-style:none;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #FFFFF7;
+}
+header li{
+    padding-top: 10px;
+    font-weight: bold;
+}
+/*js*/
+a.menu-link {
+        float: right;
+            display: block;
+            padding: 1em;
+        }
+        nav[role=navigation] {
+            clear: both;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+        .js nav[role=navigation] {
+            overflow: hidden;
+            max-height: 0;
+        }
+        nav[role=navigation].active {
+            max-height: 30em;
+        }
+        nav[role=navigation] ul {
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid #808080;
+        }
+        nav[role=navigation] li a {
+            display: block;
+            padding: 0.8em;
+            border-bottom: 1px solid #808080;
+        }
+
+        @media screen and (min-width:800px) {
+            a.menu-link {
+               display: none;
+            }
+            .js nav[role=navigation] {
+                max-height: none;
+            }
+            nav[role=navigation] ul {
+                margin: 0 0 0 -0.25em;
+                border: 0;
+            }
+
+            nav[role=navigation]  li {
+                display: inline-block;
+                margin: 0 0.25em;
+            }
+            nav[role=navigation] li a {
+                border: 0;
+            }
+        }
+        /*js*/
+a{
+  text-decoration: none;
+}
+header a{
+  font-size: 20px;
+  color:#BE905E;
+  border-bottom:1px solid #F1DEAA;
+}
+.logo{
+  max-width: 100%;
+  width:20%;
+  height: 20%;
+  display: block;
+  margin:0 auto;
+  padding-left:25px;
+  padding-bottom: 10px;
+}
+/*header content*/
+/*scroll js*/
+.carousel-cell {
+    width: 100%;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: auto;
+}
+
+/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
+.carousel:after {
+  content: 'flickity';
+  display: none; /* hide :after */
+}
+/*scroll js*/
+/*.imagetop{
+  background-image: url("images/header.jpg");
+  background-size:cover;
+  max-width:100%;
+  margin-top:10px;
+  margin-left:10px;
+  margin-bottom:10px;
+  min-height:200px;
+}*/
+
+.intro{
+  background-color: #F1DEAA;
+}
+section h2{
+  font-family: avenir;
+  font-style: normal;
+  font-size: 20px;
+}
+.room1{
+  background-color: #F1DEAA;
+}
+.imageintro{
+  max-width: 100%;
+  height:30%;
+  width: 30%;
+}
+.more{
+  background-color: #C69C6D;
+  width:40px;
+}
+.more a {
+  color:white;
+}
+/*introduction end*/
+.honor{
+  background-color: #F1DEAA;
+}
+.imagehonor{
+  max-width: 100%;
+  height:30%;
+  width: 30%;
+}
+.attract{
+  color:white;
+}
+.attract h2{
+    font-family: Avenir light;
+}
+section ul li a{
+  　text-decoration: none;
+    color:white;
+}
+section ul li{
+  list-style: none;
+}
+.at{
+  border-right:3px solid #C69C6D;
+  padding-left:10px;
+  padding-right:10px;
+  margin-top:5px;
+}
+/*attraction end*/
+footer{
+  color:white;
+}
+.logob{
+  width: 15%;
+  height:15%;
+  max-width: 100%;
+}
+/*footer end*/
+.imagesh{
+  width:10%;
+  height:10%;
+}
+section h1{
+  font-size: 40px;
+  color:white;
+  font-family:Avenir light;
+}
+span p{
+  color:#BE905E;
+  text-align: center;
+}
+.check a{
+  color:white;
+  font-size:12px;
+}
+.check{
+  background-color: #C69C6D;
+  width:100px;
+}
+.calendar a{
+  color:white;
+  font-size:12px;
+}
+  .calendar{
+    background-color: #C69C6D;
+    width:60px;
+  }
+  .review a{
+    color:white;
+    font-size:12px;
+  }
+    .review{
+      background-color: #C69C6D;
+      width:60px;
+    }
+    .room2{
+      background-color: #F1DEAA;
+    }
+    /*rooms end*/
+    .book{
+      background-color: #C69C6D;
+      width:40px;
+    }
+    .book a {
+      color:white;
+    }
