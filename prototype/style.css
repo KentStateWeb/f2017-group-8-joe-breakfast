@@ -1,24 +1,39 @@
 body {
   max-width: 12800px;
-  padding: 1em;
+  /*padding: 1em;*/
   font-family:  Avenir,sans-serif;
   background-color: #240202;
 }
-div, section, main, aside, header, footer {
+/** {
+  box-sizing: border-box;
+}*/
+/*div, section, main, aside, header, footer {
   border: 1px solid lightgray;
   padding: .5em;
   margin-bottom: 1em;
+}*/
+img {
+max-width: 100%;
 }
 header ul{
   list-style:none;
-  padding-top: 5px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   background-color: #FFFFF7;
 }
 header li{
     padding-top: 10px;
     font-weight: bold;
+}
+@media screen and (min-width:600px){
+  header ul{
+    background-color: #240202;
+    color: white;
+    font-size: 15px;
+  }
 }
 /*js*/
 a.menu-link {
@@ -83,8 +98,8 @@ header a{
 }
 .logo{
   max-width: 100%;
-  width:20%;
-  height: 20%;
+  width:15%;
+  height: 15%;
   display: block;
   margin:0 auto;
   padding-left:25px;
@@ -116,26 +131,42 @@ header a{
   margin-bottom:10px;
   min-height:200px;
 }*/
-
+section{
+  padding:2em;
+}
 .intro{
   background-color: #F1DEAA;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
 }
 section h2{
   font-family: avenir;
   font-style: normal;
   font-size: 20px;
 }
-.room1{
-  background-color: #F1DEAA;
-}
 .imageintro{
-  max-width: 100%;
-  height:30%;
-  width: 30%;
+  max-width: 600px;
+  max-height: 500px;
+  overflow:hidden;
+  padding-top:2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+section img{
+  border:6px solid #fffff7;
+  box-shadow: 3px 3px 1px gray;
+}
+.bodytext{
+    padding-bottom: :2em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 .more{
   background-color: #C69C6D;
   width:40px;
+  margin-left:20em;
+  margin-bottom:1em;
+  padding:3px;
 }
 .more a {
   color:white;
@@ -144,13 +175,18 @@ section h2{
 .honor{
   background-color: #F1DEAA;
 }
-.imagehonor{
-  max-width: 100%;
-  height:30%;
-  width: 30%;
+.imageho{
+  max-width: 600px;
+  max-height: 500px;
+  overflow:hidden;
+  padding-top:2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .attract{
   color:white;
+  padding-right:10px;
+  margin-top:5px;
 }
 .attract h2{
     font-family: Avenir light;
@@ -158,24 +194,35 @@ section h2{
 section ul li a{
   　text-decoration: none;
     color:white;
+    text-indent: 2em;
 }
 section ul li{
   list-style: none;
 }
 .at{
-  border-right:3px solid #C69C6D;
-  padding-left:10px;
+  /*border-right:3px solid #C69C6D;*/
   padding-right:10px;
   margin-top:5px;
 }
 /*attraction end*/
 footer{
   color:white;
+  border-top:3px solid #C69C6D;
 }
 .logob{
   width: 15%;
   height:15%;
   max-width: 100%;
+}
+footer img{
+  display:flex;
+  flex-wrap:wrap;
+}
+footer dl{
+  font-size: 13px;
+}
+footer dt{
+  padding-left: 40px;
 }
 /*footer end*/
 .imagesh{
@@ -187,7 +234,7 @@ section h1{
   color:white;
   font-family:Avenir light;
 }
-span p{
+span p,h1{
   color:#BE905E;
   text-align: center;
 }
@@ -198,6 +245,9 @@ span p{
 .check{
   background-color: #C69C6D;
   width:100px;
+  margin-left:2em;
+  margin-bottom:0.3em;
+  padding:3px;
 }
 .calendar a{
   color:white;
@@ -206,6 +256,9 @@ span p{
   .calendar{
     background-color: #C69C6D;
     width:60px;
+    margin-left:2em;
+    margin-bottom:0.3em;
+    padding:3px;
   }
   .review a{
     color:white;
@@ -214,15 +267,18 @@ span p{
     .review{
       background-color: #C69C6D;
       width:60px;
-    }
-    .room2{
-      background-color: #F1DEAA;
+      margin-left:2em;
+      margin-bottom:0.3em;
+      padding:3px;
     }
     /*rooms end*/
-    .book{
+    .more2{
       background-color: #C69C6D;
       width:40px;
+      margin-left:2em;
+      margin-bottom:0.3em;
+      padding:3px;
     }
-    .book a {
+    .more2 a{
       color:white;
     }
