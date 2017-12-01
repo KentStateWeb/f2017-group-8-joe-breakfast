@@ -3,6 +3,7 @@ body {
   /*padding: 1em;*/
   font-family:  Avenir,sans-serif;
   background-color: #240202;
+  margin:0;
 }
 /** {
   box-sizing: border-box;
@@ -25,14 +26,34 @@ header ul{
   background-color: #FFFFF7;
 }
 header li{
-    padding-top: 10px;
     font-weight: bold;
 }
-@media screen and (min-width:600px){
+@media screen and (min-width:800px){
   header ul{
     background-color: #240202;
+  }
+  header ul a {
     color: white;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+/*a:hover{
+    border-bottom:1px solid #c69c6d;
+  }*/
+  .logo{
+    display: block;
+    margin-left: auto;
+  }
+}
+a:hover{
+    /*border-left:3px solid #c69c6d;*/
+    border-bottom:1px solid #c69c6d;
+  }
+@media screen and (min-width:800px){
+  header {
+    display: flex;
+    align-items: center;
+    flex-wrap:nowrap;
   }
 }
 /*js*/
@@ -88,6 +109,35 @@ a.menu-link {
             }
         }
         /*js*/
+
+.hero-image__container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 100%;
+}
+
+.hero-image__text {
+    z-index: 100;
+    padding: 1em;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+/* All this does is add a 50% black background on top of the image */
+/*.hero-image:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+}*/
+/*text on the picture*/
 a{
   text-decoration: none;
 }
@@ -98,10 +148,12 @@ header a{
 }
 .logo{
   max-width: 100%;
-  width:15%;
-  height: 15%;
+  width:12%;
+  height: 12%;
   display: block;
   margin:0 auto;
+  margin-left: 13em;
+  margin-top: 1em;
   padding-left:25px;
   padding-bottom: 10px;
 }
@@ -156,6 +208,31 @@ section img{
   border:6px solid #fffff7;
   box-shadow: 3px 3px 1px gray;
 }
+@media screen and (min-width:800px){
+  .intro{
+    display: flex;
+    flex-wrap:nowrap;
+    height: 500px;
+    margin-left: 3em;
+    margin-right:3em;
+  }
+  .imageho{
+    height: 1000px;
+    width: 800px;
+  }
+  .more{
+    margin-top: 16em;
+  }
+  .attract ul{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 3em;
+  }
+  .attract li{
+    border-right:3px solid #C69C6D;
+    padding-left: 2.5em;
+  }
+}
 .bodytext{
     padding-bottom: :2em;
     padding-left: 2em;
@@ -164,7 +241,8 @@ section img{
 .more{
   background-color: #C69C6D;
   width:40px;
-  margin-left:20em;
+  margin-left:auto;
+  margin-right: 2em;
   margin-bottom:1em;
   padding:3px;
 }
@@ -199,6 +277,9 @@ section ul li a{
 section ul li{
   list-style: none;
 }
+section ul{
+  padding:0;
+}
 .at{
   /*border-right:3px solid #C69C6D;*/
   padding-right:10px;
@@ -208,11 +289,15 @@ section ul li{
 footer{
   color:white;
   border-top:3px solid #C69C6D;
+  display: flex;
 }
 .logob{
-  width: 15%;
-  height:15%;
+  width: 20%;
+  height:20%;
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  padding-top: 1em;
 }
 footer img{
   display:flex;
