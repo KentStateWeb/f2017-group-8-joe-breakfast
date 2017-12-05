@@ -46,7 +46,6 @@ header li{
   }
 }
 a:hover{
-    /*border-left:3px solid #c69c6d;*/
     border-bottom:1px solid #c69c6d;
   }
 @media screen and (min-width:800px){
@@ -212,31 +211,44 @@ section img{
   .intro{
     display: flex;
     flex-wrap:nowrap;
-    height: 500px;
-    margin-left: 3em;
-    margin-right:3em;
+    height: 400px;
+    margin-left: 10em;
+    margin-right:10em;
   }
   .imageho{
-    height: 1000px;
-    width: 800px;
+    width:55%;
+    overflow: hidden;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
-  .more{
+  header a:hover{
+    border-bottom:1px solid #c69c6d;
+  }
+  .attract h2{
+    margin-left: 8em;;
+  }
+  span p{
+    padding-bottom: 2em;
+  }
+  /*.more{
     margin-top: 16em;
-  }
+  }*/
   .attract ul{
     display: flex;
     flex-wrap: nowrap;
-    margin-right: 3em;
+    margin-right: 9em;
   }
   .attract li{
     border-right:3px solid #C69C6D;
-    padding-left: 2.5em;
+    padding-left: 10em;
   }
 }
 .bodytext{
-    padding-bottom: :2em;
+    margin-top:2em;
     padding-left: 2em;
     padding-right: 2em;
+    width:50%;
 }
 .more{
   background-color: #C69C6D;
@@ -330,7 +342,6 @@ span p,h1{
 .check{
   background-color: #C69C6D;
   width:100px;
-  margin-left:2em;
   margin-bottom:0.3em;
   padding:3px;
 }
@@ -341,7 +352,6 @@ span p,h1{
   .calendar{
     background-color: #C69C6D;
     width:60px;
-    margin-left:2em;
     margin-bottom:0.3em;
     padding:3px;
   }
@@ -352,7 +362,6 @@ span p,h1{
     .review{
       background-color: #C69C6D;
       width:60px;
-      margin-left:2em;
       margin-bottom:0.3em;
       padding:3px;
     }
@@ -360,10 +369,15 @@ span p,h1{
     .more2{
       background-color: #C69C6D;
       width:40px;
-      margin-left:2em;
-      margin-bottom:0.3em;
-      padding:3px;
+      margin-bottom:0.5em;
+      padding:5px;
+    }
+    .more2 a:hover{
+      color:red;
     }
     .more2 a{
       color:white;
+    }
+    .bodytext a:hover{
+      color:red;
     }
