@@ -45,9 +45,12 @@ header li{
     margin-left: auto;
   }
 }
-a:hover{
+nav[role=navigation] li a:hover{
     border-bottom:1px solid #c69c6d;
   }
+.attract li a:hover{
+      border-bottom:1px solid #c69c6d;
+}
 @media screen and (min-width:800px){
   header {
     display: flex;
@@ -83,7 +86,10 @@ a.menu-link {
         }
         nav[role=navigation] li a {
             display: block;
-            padding: 0.8em;
+            padding-left: 0.8em;
+            padding-right: 0.8em;
+            padding-top:0.8em;
+            padding-bottom: 0.2em;
             border-bottom: 1px solid #808080;
         }
 
@@ -222,18 +228,18 @@ section img{
     padding-left: 2em;
     padding-right: 2em;
   }
-  header a:hover{
-    border-bottom:1px solid #c69c6d;
+  .logo{
+    margin-bottom: 10px;
   }
   .attract h2{
     margin-left: 8em;;
   }
+  .bodytext{
+        width:50%;
+  }
   span p{
     padding-bottom: 2em;
   }
-  /*.more{
-    margin-top: 16em;
-  }*/
   .attract ul{
     display: flex;
     flex-wrap: nowrap;
@@ -248,7 +254,6 @@ section img{
     margin-top:2em;
     padding-left: 2em;
     padding-right: 2em;
-    width:50%;
 }
 .more{
   background-color: #C69C6D;
