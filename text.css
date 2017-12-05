@@ -1,0 +1,16 @@
+body{
+  font-family: sans-serif;
+}
+a{
+  background-color: brown;
+  text-decoration: none;
+  color:white;
+  padding:8px;
+  border-bottom: 2px solid lightgray;
+}
+a:hover{
+  color:yellow;
+}
+h2{
+  margin-top: 1.5em;
+}
