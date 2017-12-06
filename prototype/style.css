@@ -5,14 +5,6 @@ body {
   background-color: #240202;
   margin:0;
 }
-/** {
-  box-sizing: border-box;
-}*/
-/*div, section, main, aside, header, footer {
-  border: 1px solid lightgray;
-  padding: .5em;
-  margin-bottom: 1em;
-}*/
 img {
 max-width: 100%;
 }
@@ -37,12 +29,9 @@ header li{
     font-size: 20px;
     font-weight: lighter;
   }
-/*a:hover{
-    border-bottom:1px solid #c69c6d;
-  }*/
   .logo{
     display: block;
-    margin-left: auto;
+    margin-left:0;
   }
 }
 nav[role=navigation] li a:hover{
@@ -80,7 +69,7 @@ a.menu-link {
             max-height: 30em;
         }
         nav[role=navigation] ul {
-            margin: 0;
+            margin-left: 0;
             padding: 0;
             border-top: 1px solid #808080;
         }
@@ -101,7 +90,7 @@ a.menu-link {
                 max-height: none;
             }
             nav[role=navigation] ul {
-                margin: 0 0 0 -0.25em;
+                margin: 0 0 0 30em;
                 border: 0;
             }
 
@@ -132,16 +121,6 @@ a.menu-link {
 }
 
 /* All this does is add a 50% black background on top of the image */
-/*.hero-image:after {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.5);
-    top: 0;
-    left: 0;
-    display: block;
-    content: "";
-}*/
 /*text on the picture*/
 a{
   text-decoration: none;
@@ -178,15 +157,6 @@ header a{
   display: none; /* hide :after */
 }
 /*scroll js*/
-/*.imagetop{
-  background-image: url("images/header.jpg");
-  background-size:cover;
-  max-width:100%;
-  margin-top:10px;
-  margin-left:10px;
-  margin-bottom:10px;
-  min-height:200px;
-}*/
 section{
   padding:2em;
 }
