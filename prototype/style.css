@@ -157,7 +157,6 @@ header a{
   height: 12%;
   display: block;
   margin:0 auto;
-  margin-left: 13em;
   margin-top: 1em;
   padding-left:25px;
   padding-bottom: 10px;
@@ -262,6 +261,7 @@ section img{
   margin-right: 2em;
   margin-bottom:1em;
   padding:3px;
+  border-radius:8px;
 }
 .more a {
   color:white;
@@ -308,6 +308,9 @@ footer{
   border-top:3px solid #C69C6D;
   display: flex;
 }
+footer a{
+  color:white;
+}
 .logob{
   width: 20%;
   height:20%;
@@ -342,33 +345,36 @@ span p,h1{
 }
 .check a{
   color:white;
-  font-size:12px;
+  font-size:15px;
 }
 .check{
   background-color: #C69C6D;
-  width:100px;
+  width:130px;
   margin-bottom:0.3em;
-  padding:3px;
+  padding:4px;
+  border-radius:8px;
 }
 .calendar a{
   color:white;
-  font-size:12px;
+  font-size:15px;
 }
   .calendar{
     background-color: #C69C6D;
-    width:60px;
+    width:70px;
     margin-bottom:0.3em;
-    padding:3px;
+    padding:4px;
+    border-radius:8px;
   }
   .review a{
     color:white;
-    font-size:12px;
+    font-size:15px;
   }
     .review{
       background-color: #C69C6D;
-      width:60px;
+      width:70px;
       margin-bottom:0.3em;
-      padding:3px;
+      padding:4px;
+      border-radius:8px;
     }
     /*rooms end*/
     .more2{
@@ -376,6 +382,7 @@ span p,h1{
       width:40px;
       margin-bottom:0.5em;
       padding:5px;
+      border-radius:8px;
     }
     .more2 a:hover{
       color:red;
