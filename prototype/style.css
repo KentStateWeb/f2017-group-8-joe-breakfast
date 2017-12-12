@@ -132,8 +132,8 @@ header a{
 }
 .logo{
   max-width: 100%;
-  width:12%;
-  height: 12%;
+  width:20%;
+  height: 20%;
   display: block;
   margin:0 auto;
   margin-top: 1em;
@@ -199,6 +199,8 @@ section img{
   }
   .logo{
     margin-bottom: 10px;
+    width:12%;
+    height: 12%;
   }
   .attract h2{
     margin-left: 8em;;
